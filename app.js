@@ -6,7 +6,7 @@ var table = document.getElementById('sales');
 
 var total_stores = [];
 
-//constructor 
+//constructor for the cookie stores
 function Cookie_store (name ,customer_min , customer_max , average_cookies) {
   this.name = name ,
   this.customer_min = customer_min;
@@ -96,6 +96,35 @@ for (var i = 0; i < total_stores.length; i++) {
 
 }
 
+// creates new instances for cookiestand
+function works (event) {
+  event.preventDefault();
+  var name = event.target.name.value;
+  var min = parseInt(event.target.min.value);
+  var max = parseInt(event.target.max.value);
+  var avg = parseInt(event.target.average.value);
+  console.log('it works');
+  var newstore = new Cookie_store(name,min,max,avg);
+
+  console.log(newstore.cookie_sales_per_hour);
+  newstore.create_cookie_sales_per_hour();
+  newstore.daily_total();
+
+  
+  let el = document.getElementById('sales');
+  // el.removeChild(el.childNodes[el.childNodes.length] );
+  el.removeChild(el.childNodes[el.childElementCount] );
+  render(newstore);
+  footer();
+  form.reset();
+}
+
+var form = document.getElementById('form');
+form.addEventListener('submit', works);
+
+var tm = [];
+
+
 function footer () {
   /// creates the total name
   var row = document.createElement('tr');
@@ -129,3 +158,4 @@ function footer () {
 
 }
 footer();
+

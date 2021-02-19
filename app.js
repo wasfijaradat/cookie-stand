@@ -6,7 +6,7 @@ var table = document.getElementById('sales');
 
 var total_stores = [];
 
-//constructor 
+//constructor for the cookie stores
 function Cookie_store (name ,customer_min , customer_max , average_cookies) {
   this.name = name ,
   this.customer_min = customer_min;
@@ -95,6 +95,7 @@ for (var i = 0; i < total_stores.length; i++) {
   render(total_stores[i]);
 
 }
+
 // creates new instances for cookiestand
 function works (event) {
   event.preventDefault();
@@ -122,6 +123,7 @@ var form = document.getElementById('form');
 form.addEventListener('submit', works);
 
 var tm = [];
+
 
 function footer () {
   /// creates the total name
@@ -156,3 +158,4 @@ function footer () {
 
 }
 footer();
+

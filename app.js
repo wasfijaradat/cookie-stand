@@ -96,7 +96,7 @@ for (var i = 0; i < total_stores.length; i++) {
 
 }
 
-// creates new instances for cookiestand
+
 function works (event) {
   event.preventDefault();
   var name = event.target.name.value;

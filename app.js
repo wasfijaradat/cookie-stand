@@ -6,7 +6,7 @@ var table = document.getElementById('sales');
 
 var total_stores = [];
 
-//constructor 
+//constructor for the cookie stores
 function Cookie_store (name ,customer_min , customer_max , average_cookies) {
   this.name = name ,
   this.customer_min = customer_min;
@@ -96,6 +96,7 @@ for (var i = 0; i < total_stores.length; i++) {
 
 }
 
+
 function works (event) {
   event.preventDefault();
   var name = event.target.name.value;
@@ -157,3 +158,4 @@ function footer () {
 
 }
 footer();
+

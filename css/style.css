@@ -1,0 +1,30 @@
+#salespage {
+    background-image: url("https://images.unsplash.com/photo-1474716934413-9f9613f0edb2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    font-family: 'Times New Roman', Times, serif
+    font-size: 14pt;
+  
+  }
+  
+  fieldset {
+  font-size: 14pt;
+  border: 5px;px solid grey ;
+  margin-right:2550px;
+  margin-top: 50px;
+  background-color:rgb(110, 18, 10);
+  color : #ffe3d8
+  }
+
+  th{
+    border: 5px solid rgb(0, 0, 0);
+    color: rgba(42, 0, 169, 0.9);
+  
+   
+  }
+  
+  #sales {
+    margin: auto;
+    width: 202px;
+    height:100px;
+    background-color: #e8e8e8 
+  }
+
